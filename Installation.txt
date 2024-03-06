@@ -1,0 +1,12 @@
+1. Depending on your Raspberry Pi pico version copy the .UF2 file into the root directory of the Raspberry Pi.
+
+#Your raspberry pi should now restart and show as "CIRCUITPY" drive.
+
+2. Copy "code.py" and "lib" folder into the root directory of CIRCUITPY drive.
+
+3.
+  - If you have self powered key (CW-Hotline), then connect the output to the GP0 pin and ground to the GND pin.
+
+  - If you have standard key, then connect the it to the 3.3v(OUT) aka GP36 and GP0 pins.
+
+4. Have fun with morse (required)
