@@ -39,3 +39,12 @@ MorseRPIz-PC is a program for Raspberry Pi zero / w for reading the output of a 
 ## Keycode list
 
 [Source code for adafruit_hid.keycode](https://docs.circuitpython.org/projects/hid/en/latest/_modules/adafruit_hid/keycode.html)
+
+# How to reset your Raspberry Pi.
+Follow these instructions if your Pico ends up in an odd state
+
+1. Download the reset firmware from [flash_nuke.uf2](https://datasheets.raspberrypi.com/soft/flash_nuke.uf2)
+2. While holding the BOOTSEL button on the Pico, plug in the USB cable to your computer.
+3. When the RPI-RP2 drive shows up on your computer, copy the flash_nuke.uf2 file to the Pico
+4. After the device reboots, follow the Install instructions [here](https://github.com/dbisu/pico-ducky/blob/main/README.md)
+
