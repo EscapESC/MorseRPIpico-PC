@@ -21,6 +21,7 @@ led.value = True
 #Get input pins from the morseKey
 input = digitalio.DigitalInOut(board.GP0)
 input.direction = digitalio.Direction.INPUT
+input.pull = digitalio.Pull.DOWN
 
 led.value = False
 
