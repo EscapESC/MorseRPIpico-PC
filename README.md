@@ -18,9 +18,11 @@ MorseRPIz-PC is a program for Raspberry Pi pico / w for reading the output of a 
 
 2. Copy `code.py` and `lib` folder into the root directory of the `CIRCUITPY`.
 
-3. If you have a standard morse key, then connect it to the `3.3v(OUT)` and `GP0` pin.
+3. Depending on your key: 
+   - If you have a standard morse key, then connect it to the `3.3v(OUT)` and `GP0` pin.
+   - If you have a self powered key with output, then connect it to the `GND` and `GP0` pin.
    
-4. Have fun.
+5. Have fun.
 
 ### Raspberry Pi pico layout :
 ![Official Raspberry Pi pico layout](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-pinout.svg)
