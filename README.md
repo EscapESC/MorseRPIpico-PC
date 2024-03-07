@@ -1,9 +1,9 @@
-# MorseRPIz-PC
+# MorseRPIpico-PC
 
 > [!Note]
 > This program was originally designed for the game [Wolfpack](https://store.steampowered.com/app/490920/Wolfpack/) and it works with it by default.
 ## Introdution
-MorseRPIz-PC is a program for Raspberry Pi zero / w for reading the output of a Morse Key and transfering it into key presses of a designated key. (Which you can change in the `code.py` file on the 12th line)
+MorseRPIz-PC is a program for Raspberry Pi pico / w for reading the output of a Morse Key and transfering it into key presses of a designated key. (Which you can change in the `code.py` file on the 12th line)
 > [!Note]
 > The default key is RIGHT_CONTROL
 
