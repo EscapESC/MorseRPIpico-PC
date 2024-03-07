@@ -21,8 +21,8 @@ MorseRPIz-PC is a program for Raspberry Pi zero / w for reading the output of a 
 3. Depending on your morse key:
    - If you have standard morse key, then connect it to the `3.3v(OUT)` and `GP0` pin.
    - If you have self powered morse key (CW Hotlin), then connect the ground to the `GND` and signal to the `GP0` pin.
-     > [!Warning]
-     > RPI zero GPIO pins are rated for 3.3V, not 5V, you will need to shift down the voltage to 3.3V since theres no over voltage protection.
+> [!Warning]
+> RPI zero GPIO pins are rated for 3.3V, not 5V, you will need to shift down the voltage to 3.3V since theres no over voltage protection.
 
 4. Have fun.
 
