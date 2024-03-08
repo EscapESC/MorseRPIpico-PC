@@ -12,6 +12,8 @@ layout = Keycode(keyboard)
 button = layout.RIGHT_CTR
 #####################################################
 
+print("Initializing...")
+
 #Get LED for morse visualtion
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
@@ -26,6 +28,8 @@ input.pull = digitalio.Pull.UP
 led.value = False
 
 morse = False
+
+print("...Initialized sucessfully")
 
 while True :
 
