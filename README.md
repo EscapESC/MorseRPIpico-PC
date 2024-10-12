@@ -10,6 +10,12 @@ MorseRPIz-PC is a program for Raspberry Pi pico / w for reading the output of a 
 > [!Tip]
 > The build in LED will visualise the morse signal recived. 
 
+### Modes
+The program has two output modes. 
+   - morse(0) this outputs a morse signal to a single button.
+   - keyboard(1) this outputs the a keyboard presses.
+> [!Note]
+> The keyboard mode depends on yours keyboard layout. ( changes z and y for QWERTZ layouts etc...)
 
 ## Installation
 
