@@ -3,7 +3,7 @@
 > [!Note]
 > This program was originally designed for the game [Wolfpack](https://store.steampowered.com/app/490920/Wolfpack/) and it works with it by default.
 ## Introdution
-MorseRPIz-PC is a program for Raspberry Pi pico / w for reading the output of a Morse Key and transfering it into key presses of a designated key. (Which you can change in the `code.py` file on the 12th line)
+MorseRPIz-PC is a program for Raspberry Pi pico / w for reading the output of a Morse Key and transfering it into key presses of a designated key / decoding morse into keyboard presses. (Modes and keys you can change in the `code.py` file on the 16,18,19th row.)
 > [!Note]
 > The default key is RIGHT_CONTROL
 
@@ -13,7 +13,7 @@ MorseRPIz-PC is a program for Raspberry Pi pico / w for reading the output of a 
 ### Modes
 The program has two output modes. 
    - morse(0) this outputs a morse signal to a single button.
-   - keyboard(1) this outputs the a keyboard presses.
+   - keyboard(1) this mode outputs keyboard presses.
 > [!Note]
 > The keyboard mode depends on yours keyboard layout. ( changes z and y for QWERTZ layouts etc...)
 
