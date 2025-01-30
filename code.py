@@ -15,7 +15,7 @@ layout = Keycode(keyboard)
 ###### Edit "Button" to your designated button ######
 button = layout.RIGHT_CONTROL
 ###### Output mode. 0  #######
-mode = 0 # 0 - morse, 1 - keyboard
+mode = 0
 wpm = 20
 #####################################################
 
@@ -77,22 +77,21 @@ while input.value == True:
 pauseStart = time.monotonic()
 while mode == 1 :
 
+    if time.monotonic()-pauseStart > 60/(50*wpm)*3:
+        buttonKey = decodeMorse(morseChar)
+        if(buttonKey != -1):
+            keyboard.press(buttonKey)
+            keyboard.release(buttonKey)
+        morseChar = ""
+
     if input.value == False:
         pauseEnd = time.monotonic()
         keyStart = time.monotonic()
         if pauseEnd-pauseStart < 60/(50*wpm)*3:
             morseChar = morseChar
         elif pauseEnd-pauseStart < 60/(50*wpm)*7:
-            buttonKey = decodeMorse(morseChar)
-            if(buttonKey != -1):
-                keyboard.press(buttonKey)
-                keyboard.release(buttonKey)
             morseChar = ""
         elif pauseEnd-pauseStart > 60/(50*wpm)*7:
-            buttonKey = decodeMorse(morseChar)
-            if(buttonKey != -1):
-                keyboard.press(buttonKey)
-                keyboard.release(buttonKey)
             keyboard.press(layout.SPACEBAR)
             keyboard.release(layout.SPACEBAR)
             morseChar = ""
